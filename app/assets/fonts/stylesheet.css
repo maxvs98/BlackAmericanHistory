@@ -1,9 +1,17 @@
 @font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-ExtraBold.woff2') format('woff2'),
-        url('Montserrat-ExtraBold.woff') format('woff');
+    font-family: 'Neue Haas Grotesk Display Pro';
+    src: url('NeueHaasDisplayBold.woff2') format('woff2'),
+        url('NeueHaasDisplayBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    src: url('NeueHaasDisplayMedium.woff2') format('woff2'),
+        url('NeueHaasDisplayMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

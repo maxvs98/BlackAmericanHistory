@@ -1,0 +1,41 @@
+.search {
+	padding: 34px 0;
+	box-sizing: border-box;
+	&__form {
+		display: flex;
+		width: 520px;
+		height: 56px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+	}
+	&__input {
+		width: 100%;
+		border: 1px solid #3A3A3A;
+		display: block;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #3A3A3A;
+		box-sizing: border-box;
+		padding-left: 52px;
+	}
+	&__input::placeholder {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #3A3A3A;
+	}
+	&__button {
+		width: 24px;
+		height: 24px;
+		background: url('../img/search.svg');
+		background-size: 100% 100%;
+		display: block;
+		position: absolute;
+		top: 16px;
+		left: 16px;
+	}
+}
