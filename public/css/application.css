@@ -41,7 +41,7 @@ html {
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1140px; } }
+    max-width: 1230px; } }
 
 .row {
   display: -webkit-box;
@@ -3557,7 +3557,6 @@ strong {
 
 body {
   font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-  /*font-family: 'Neue Haas Grotesk Display Pro';*/
   color: #222;
   font-size: 1.6rem;
   font-weight: 500;
@@ -3636,6 +3635,12 @@ ul {
 a {
   color: inherit;
   text-decoration: inherit; }
+
+p {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0; }
 
 @font-face {
   font-family: 'Neue Haas Grotesk Display Pro';
@@ -3751,3 +3756,158 @@ a {
     position: absolute;
     top: 16px;
     left: 16px; }
+
+.home {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 66px; }
+  .home__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #1C1C1C;
+    max-width: 589px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .home__items {
+    margin-top: 140px; }
+  .home__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 140px; }
+  .home__item:last-child {
+    margin-bottom: 0; }
+  .home__item-text {
+    width: 616px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 33px;
+    color: #3A3A3A;
+    padding: 0 60px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .home__text-1 {
+    margin-top: 109px; }
+  .home__text-2 {
+    margin-top: 51px; }
+  .home__text-3 {
+    margin-top: 0px; }
+  .home__text-4 {
+    margin-top: 60px; }
+  .home__item-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    color: #3A3A3A;
+    margin-bottom: 32px; }
+  .home__item-image-1 img {
+    width: 585.73px;
+    height: 319.3px; }
+  .home__item-image-2 img {
+    width: 585.87px;
+    height: 277.89px; }
+  .home__item-image-3 img {
+    width: 585.62px;
+    height: 177.68px; }
+  .home__item-image-4 img {
+    width: 586.44px;
+    height: 339.48px; }
+
+.statistics {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 227px 0 190px; }
+  .statistics__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .statistics__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-contet: space-between;
+    width: 365px; }
+  .statistics__icon {
+    display: block;
+    width: 64px;
+    height: 64px; }
+  .statistics__text {
+    margin-left: 35px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #3A3A3A;
+    max-width: 269px; }
+  .statistics__number {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 77px;
+    background: -webkit-gradient(linear, left bottom, left top, from(#812de1), to(#423ee0));
+    background: -o-linear-gradient(bottom, #812de1 0%, #423ee0 100%);
+    background: linear-gradient(0deg, #812de1 0%, #423ee0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 7px; }
+
+.donating {
+  background: #EFEFEF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 130px 0; }
+  .donating__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: #3A3A3A; }
+  .donating__subtitle {
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 33px;
+    text-align: center;
+    color: #3A3A3A; }
+  .donating__card {
+    width: 315px;
+    height: 184px;
+    background: url("../img/card.svg");
+    background-size: 100% 100%;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto; }
+  .donating__button {
+    display: block;
+    width: 298px;
+    height: 54px;
+    background: #E76F51;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-top: 16px; }

@@ -1,0 +1,37 @@
+.statistics {
+	box-sizing: border-box;
+	padding: 227px 0 190px;
+	&__wrap {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		display: flex;
+		justify-contet: space-between;
+		width: 365px;
+	}
+	&__icon {
+		display: block;
+		width: 64px;
+		height: 64px;
+	}
+	&__text {
+		margin-left: 35px;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 22px;
+		color: #3A3A3A;
+		max-width: 269px;
+	}
+	&__number {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 64px;
+		line-height: 77px;
+		background: linear-gradient(0deg, rgba(129,45,225,1) 0%, rgba(66,62,224,1) 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		margin-bottom: 7px;
+	}
+}

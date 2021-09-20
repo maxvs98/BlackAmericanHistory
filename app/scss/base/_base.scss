@@ -30,7 +30,6 @@ b, strong {
 }
 body {
     @include font();
-    /*font-family: 'Neue Haas Grotesk Display Pro';*/
     color: $black;
     font-size: 1.6rem;
     font-weight: 500;
@@ -115,4 +114,7 @@ a {
   color: inherit;
   text-decoration: inherit;
 }
-
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}

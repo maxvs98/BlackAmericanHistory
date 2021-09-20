@@ -1,0 +1,51 @@
+.donating {
+	background: #EFEFEF;
+	box-sizing: border-box;
+	padding: 130px 0;
+	&__title {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 43px;
+		text-align: center;
+		color: #3A3A3A;
+	}
+	&__subtitle {
+		max-width: 496px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 32px;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 33px;
+		text-align: center;
+		color: #3A3A3A;
+	}
+	&__card {
+		width: 315px;
+		height: 184px;
+		background: url("../img/card.svg");
+		background-size: 100% 100%;
+		margin-top: 32px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&__button {
+		display: block;
+		width: 298px;
+		height: 54px;
+		background: #E76F51;
+		margin-top: 32px;
+		margin-left: auto;
+		margin-right: auto;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 22px;
+		text-align: center;
+		color: #FFFFFF;
+		box-sizing: border-box;
+		padding-top: 16px;
+	}
+}
