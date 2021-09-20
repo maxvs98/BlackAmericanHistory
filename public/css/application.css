@@ -3557,11 +3557,15 @@ strong {
 
 body {
   font-family: "";
-  font-weight: 400;
+  /*font-family: 'Neue Haas Grotesk Display Pro';*/
   color: #222;
   font-size: 1.6rem;
   height: 100%;
   background: #fff; }
+
+@media screen and (max-width: 575px) {
+  body {
+    padding-top: 65px; } }
 
 button, select, input, textarea {
   font-family: "";
@@ -3623,6 +3627,24 @@ table {
 :focus::-ms-input-placeholder {
   color: transparent; }
 
+@font-face {
+  font-family: 'Neue Haas Grotesk Display Pro';
+  src: url("../fonts/NeueHaasDisplayMedium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Neue Haas Grotesk Display Pro';
+  src: url("../fonts/NeueHaasDisplayBold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+
 /**
  * Basic typography style for copy text
  */
+.list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }

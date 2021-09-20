@@ -29,7 +29,7 @@
                         <a href="#">About</a>
                     </li>
                     <li>
-                        <a href="#">View the full timeline</a>
+                        <a class="current" href="#">View the full timeline</a>
                     </li>
                     <li>
                         <a href="#">Become a collaborator</a>
@@ -41,72 +41,43 @@
             </nav>
         </div>
     </header>
-    <section class="search">
-        <div class="container">
-            <form class="search__form">
-                <button class="search__button" type="submit">
-                <input class="search__input" type="text" placeholder="Search the Timeline">
-            </form>
-        </div>
-    </section>
     <!-- End header -->
     <!-- Begin main -->
     <main class="main">
-        <div class="main__content">
+        <div class="about">
             <div class="container">
-                <div class="main__title">
-                    We're building the world's largest Black American History Timeline
+                <div class="about__items">
+                    <div class="about__item">
+                        <div class="about__title">
+                            Our mission
+                        </div>
+                        <div class="about__text">
+                            To be the central source of truth and informationabout Black American history in totality, and toeducate Americans about Black American History.
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__title">
+                            Who we are
+                        </div>
+                        <div class="about__text">
+                            Founded in 2021, BlackAmericanHistory.org is a non-profitorganization made up of historians,scholars, and enthusiasts, on a mission to help thosewho are curious better understand BlackAmerican history more clearly. With help from volunteercollaborators nationwide, we arebuilding the world’s largest Black American HistoryTimeline, along with the tools to helplearners easily comprehend the information.
+                        </div>
+                    </div>
                 </div>
-                <div class="main__items">
-                    <div class="main__item">
-                        <div class="main__item-text">
-                            <p>
-                                And growing. Over 1,000 timeline events about every aspect of Black American history, from food & music to wars & rebellions. There is a lot to discover and understand.
-                            </p>
-                        </div>
-                        <div class="main__item-image">
-                            <img alt="item-img" src="#">
-                        </div>
-                    </div>
-                    <div class="main__item">
-                        <div class="main__item-image">
-                            <img alt="item-img" src="#">
-                        </div>
-                        <div class="main__item-text">
-                            <div class="main__item-title">
-                                Verified by experts.
-                            </div>
-                            <p>
-                                Built by scholars, historians, researchers, and enthusiasts, every entry on the timeline has been approved by a community of experts to ensure all information is true and valid.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="main__item">
-                        <div class="main__item-text">
-                            <div class="main__item-title">
-                                Built for understanding
-                            </div>
-                            <p>
-                                Іnformation can often be misinterpreted when presented through a narrow lens. Each event on the timeline is intended to present a holistic view to help bring clarity and understanding to Black American history.
-                            </p>
-                        </div>
-                        <div class="main__item-image">
-                            <img alt="item-img" src="#">
-                        </div>
-                    </div>
-                    <div class="main__item">
-                        <div class="main__item-image">
-                            <img alt="item-img" src="#">
-                        </div>
-                        <div class="main__item-text">
-                            <div class="main__item-title">
-                                Tools to help you discover and learn
-                            </div>
-                            <p>
-                                Black American history is very large and very complex. Over time, we will release more advanced tools to help you easily navigate, discover, and learn from such a vast and complicated subject.
-                            </p>
-                        </div>
-                    </div>
+            </div>
+        </div>
+        <div class="donating">
+            <div class="container">
+                <div class="donating__title">
+                    Please consider donating
+                </div>
+                <div class="donating__subtitle">
+                    Your donations help us keep this information free and available to everyone.
+                </div>
+                <div class="donating__card">
+                </div>
+                <div class="donating__button">
+                    Donate
                 </div>
             </div>
         </div>
@@ -147,18 +118,33 @@
                 </div>
             </div>
         </div>
-        <div class="donating">
+        <div class="feedback">
             <div class="container">
-                <div class="donating__title">
-                    Please consider donating
+                <div class="feedback__left">
+                    <div class="feedback__title">
+                        Contact us
+                    </div>
+                    <div class="feedback__field-title">
+                        Email us at
+                    </div>
+                    <div class="feedback__field-field">
+                        hello@blackamericanhistory.org
+                    </div>
                 </div>
-                <div class="donating__subtitle">
-                    Your donations help us keep this information free and available to everyone.
-                </div>
-                <div class="donating__card">
-                </div>
-                <div class="donating__button">
-                    Donate
+                <div class="feedback__right">
+                    <form class="feedback__form">
+                        <label class="feedback__label">
+                            Email
+                        </label>
+                        <input class="feedback__input" type="email" name="email" placeholder="Start typing">
+                        <label class="feedback__label">
+                            Message
+                        </label>
+                        <textarea class="feedback__textarea" name="message" placeholder="Start typing">
+                        <button type="submit" class="feedback__button">
+                            Donate
+                        </button> 
+                    </form>
                 </div>
             </div>
         </div>

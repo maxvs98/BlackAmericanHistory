@@ -30,11 +30,16 @@ b, strong {
 }
 body {
     @include font();
-    font-weight: 400;
+    /*font-family: 'Neue Haas Grotesk Display Pro';*/
     color: $black;
     font-size: 1.6rem;
     height: 100%;
     background: $white;
+}
+@media screen and (max-width: 575px) {
+    body {
+        padding-top: 65px;
+    }
 }
 button {
     @include font();
