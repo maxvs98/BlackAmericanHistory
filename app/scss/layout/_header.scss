@@ -14,11 +14,24 @@
 		width: 541px;
 		padding: 17px 0;
 	}
+	&__menu ul li {
+		box-sizing: border-box;
+		padding-left: 8px;
+		padding-right: 8px;
+	}
 	&__menu ul li a {
 		font-style: normal;
 		font-weight: 600;
 		font-size: 18px;
 		line-height: 22px;
 		color: #3A3A3A;
+		transition: color 0.25s ease;
+	}
+	&__menu ul li a:hover {
+		color: #E76F51;
+		transition: color 0.25s ease;
+	}
+	&__menu ul li a.current {
+		color: #E76F51;
 	}
 }

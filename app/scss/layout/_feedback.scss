@@ -43,6 +43,18 @@
 		background: #EFEFEF;
 		margin-top: 12px;
 		margin-bottom: 32px;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #868585;
+	}
+	&__input::placeholder {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #868585;
 	}
 	&__textarea {
 		width: 100%;
@@ -52,6 +64,18 @@
 		display: block;
 		box-sizing: border-box;
 		padding: 16px;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #868585;
+	}
+	&__textarea::placeholder {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #868585;
 	}
 	&__button {
 		width: 100%;
@@ -66,5 +90,9 @@
 		box-sizing: border-box;
 		margin-top: 32px;
 		display: block;
+	}
+	&__right {
+		padding-left: 60px;
+		padding-right: 60px;
 	}
 }
