@@ -13,6 +13,33 @@
 	&__posts {
 		margin-left: 88px;
 	}
+	&__title {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 100px;
+	}
+	&__request {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 43px;
+		color: #1C1C1C;
+		box-sizing: border-box;
+		padding: 6.5px 0;
+		span {
+			color: #E76F51;
+		}
+	}
+	&__results {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 33px;
+		color: #3A3A3A;
+		width: 600px;
+		box-sizing: border-box;
+		padding: 11.5px 60px;
+	}
 	.post {
 		display: flex;
 		justify-content: space-between;
@@ -44,6 +71,183 @@
 			color: #3A3A3A;
 			margin-top: 32px;
 		}
+		&__mark {
+			margin-top: 8px;
+			display: flex;
+			span {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 18px;
+				line-height: 22px;
+				margin-left: 8px;
+				box-sizing: border-box;
+				display: block;
+				padding: 1px 0;
+			}
+			img {
+				width: 24px;
+				height: 24px;
+			}
+		}
+		&__activity {
+			margin-top: 32px;
+			display: flex;
+		}
+		&__icon {
+			width: 24px;
+			height: 24px;
+			transition: all 0.25s ease;
+		}
+		&__icon.like {
+			background: url("../img/like.svg") center;
+			background-size: 100% 100%;
+		}
+		&__icon.dislike {
+			background: url("../img/dislike.svg") center;
+			background-size: 100% 100%;
+		}
+		&__icon.dislike {
+			background: url("../img/dislike.svg") center;
+			background-size: 100% 100%;
+		}
+		&__icon.comment {
+			background: url("../img/comment.svg") center;
+			background-size: 100% 100%;
+		}
+		&__icon.chain {
+			background: url("../img/chain.svg") center;
+			background-size: 100% 100%;
+		}
+		.likes-button:hover {
+			color: #F44D4D;
+			.post__icon {
+				background: url("../img/like-active.svg") center;
+				background-size: 100% 100%;
+				transition: all 0.25s ease;
+			}
+			transition: all 0.25s ease;
+		}
+		.dislikes-button:hover {
+			color: #F44D4D;
+			.post__icon {
+				background: url("../img/dislike-active.svg") center;
+				background-size: 100% 100%;
+				transition: all 0.25s ease;
+			}
+			transition: all 0.25s ease;
+		}
+		.comments-button:hover {
+			color: #F44D4D;
+			.post__icon {
+				background: url("../img/comment-active.svg") center;
+				background-size: 100% 100%;
+				transition: all 0.25s ease;
+			}
+			transition: all 0.25s ease;
+		}
+		.share-link-button:hover {
+			color: #F44D4D;
+			.post__icon {
+				background: url("../img/chain-active.svg") center;
+				background-size: 100% 100%;
+				transition: all 0.25s ease;
+			}
+			transition: all 0.25s ease;
+		}
+		.likes-button,
+		.dislikes-button,
+		.comments-button,
+		.share-link-button {
+			display: flex;
+			margin-right: 32px;
+			cursor: pointer;
+			transition: all 0.25s ease;
+			span {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 18px;
+				line-height: 22px;
+				display: block;
+				box-sizing: border-box;
+				padding: 1px 0;
+				margin-left: 8px;
+			}
+		}
+		.share-link-button {
+			margin-right: 0;
+			text-decoration: underline;
+			span {
+				font-weight: 500;
+			}
+		}
+		&__comments {
+			margin-top: 32px;
+			.comment {
+				border-top: solid 1px #EFEFEF;
+				box-sizing: border-box;
+				padding-top: 32px;
+				padding-bottom: 32px;
+				&__author {
+					font-style: normal;
+					font-weight: bold;
+					font-size: 24px;
+					line-height: 29px;
+					color: #3A3A3A;
+				}
+				&__text {
+					font-style: normal;
+					font-weight: 500;
+					font-size: 18px;
+					line-height: 33px;
+					color: #3A3A3A;
+					margin-top: 16px;
+				}
+			}
+		}
+		&__comments-items {
+			border-bottom: solid 1px #EFEFEF;
+		}
+		&__comments-form {
+			margin-top: 32px;
+			position: relative;
+		}
+		&__comments-button {
+			width: 24px;
+			height: 24px;
+			background: url('../img/comment-arrow.svg') no-repeat center;
+			background-size: 100% 100%;
+			position: absolute;
+			top: 16px;
+			right: 16px;
+		}
+		&__comments-input {
+			width: 100%;
+			height: 56px;
+			background: #EFEFEF;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 22px;
+			color: #3A3A3A;
+			box-sizing: border-box;
+			padding-left: 16px;
+			padding-right: 52px;
+		}
+		&__comments-input::placeholder {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 22px;
+			color: #3A3A3A;
+		}
+	}
+	.post.approving {
+		.post__date,
+		.post__mark,
+		.post__title,
+		.post__text {
+			color: #F44D4D;
+		}
 	}
 	.post:before {
 		content: '';
@@ -54,7 +258,30 @@
 		background: #FCF9F7;
 		border: 6px solid #E76F51;
 		position: absolute;
-		left: -87px;
+		left: -88px;
 		top: 64px;
+	}
+	&__add-new {
+		width: 380px;
+		height: 56px;
+		border: 2px solid #3A3A3A;
+		margin-left: 13px;
+		margin-top: 13px;
+		display: flex;
+		justify-content: center;
+		box-sizing: border-box;
+		padding-top: 16px;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 22px;
+		color: #3A3A3A;
+		cursor: pointer;
+		img {
+			width: 24px;
+			height: 24px;
+			margin-top: -1px;
+			margin-right: 10px;
+		}
 	}
 }
