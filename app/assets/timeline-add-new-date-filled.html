@@ -22,22 +22,29 @@
     <!-- Begin header -->
     <header class="header">
         <div class="container">
-            <img alt="logo" class="header__logo" src="#">
-            <nav class="header__menu">
-                <ul>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a class="current" href="#">View the full timeline</a>
-                    </li>
-                    <li>
-                        <a href="#">Become a collaborator</a>
-                    </li>
-                    <li>
-                        <a href="#">Donate</a>
-                    </li>
-                </ul>
+            <div class="header__wrapper">
+                <a href="#" class="header__logo">
+                    <img alt="logo" class="header__logo-img" src="img/logo.svg">
+                </a>
+                <nav class="header__menu editor-menu">
+                    <ul>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a class="current" href="#">View the full timeline</a>
+                        </li>
+                        <li>
+                            <a href="#">Donate</a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Dashboard</span><img alt="#" src="img/menu-arrow.svg"></a>
+                        </li>
+                        <li>
+                            <a href="#">Profile</a>
+                        </li>
+                    </ul>
+                </nav>
             </nav>
         </div>
     </header>
@@ -54,7 +61,7 @@
                     </div>
                     <div class="add-new-date__right">
                         <div class="add-new-date__notification">
-                            <img alt="icon" src="#">
+                            <img alt="icon" src="img/info-icon.svg">
                             <span>
                                 Before adding new note, please read our guidelines
                             </span>
@@ -63,21 +70,21 @@
                             <label>
                                 Date
                             </label>
-                            <input type="text" class="add-new-date__input">
+                            <input type="text" class="add-new-date__input" value="1521 (Dec 26)">
                             <label>
                                 Title
                             </label>
-                            <input type="text" class="add-new-date__input">
+                            <textarea type="text" class="add-new-date__input filled">The Santo Domingo Slave Revolt is the earliest slave rebellion recorded in the Americas.</textarea>
                             <label>
                                 Text
                             </label>
-                            <input type="text" class="add-new-date__input">
+                            <textarea type="text" class="add-new-date__input-text filled">This revolt happened in the Spanish colony of Santo Domingo on the island of Hispaniola. On the first or second day of Christmas, slaves on the Nueva Isabela sugar plantation owned by the colony’s governor Diego Colón (a descendant of Chistopher Columbus) rebelled. Local oral tradition says that the rebellion was led by Maria Olofa (Wolofa) and Gonzalo Mandinga, a romantic couple, both from the Wolof nation and muslim. Just days after the uprising, on Jan 6th, 1522, Diego introduced strict laws designed to prevent the “Black and slaves” from uprising again.</textarea>
                             <label>
                                 Source link
                             </label>
                             <input type="text" class="add-new-date__input" placeholder="Link.link">
                             <div class="add-link-button">
-                                <img alt="icon" src="#">
+                                <img alt="icon" src="img/plus.svg">
                                 <span>
                                     Add Link
                                 </span>

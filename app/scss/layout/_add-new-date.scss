@@ -1,0 +1,170 @@
+.add-new-date {
+	padding-top: 34px;
+	padding-bottom: 312px;
+	&__block {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 128px;
+	}
+	&__block:last-child {
+		margin-bottom: 0;
+	}
+	&__block-title {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 43px;
+		color: #1C1C1C;
+	}
+	&__right {
+		width: 600px;
+		padding: 0 60px;
+		box-sizing: border-box;
+	}
+	&__notification {
+		display: flex;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 33px;
+		display: flex;
+		color: #F44D4D;
+		span {
+			margin-left: 8px;
+		}
+	}
+	&__form {
+		margin-top: 75.5px;
+		label {
+			font-style: normal;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 22px;
+			color: #3A3A3A;
+			display: block;
+		}
+	}
+	&__input,
+	&__input-text {
+		width: 480px;
+		height: 54px;
+		background: #EFEFEF;
+		margin-top: 12px;
+		box-sizing: border-box;
+		padding: 16px;
+		margin-bottom: 32px;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #3A3A3A;
+	}
+	&__input.filled {
+		height: 76px;
+	}
+	&__input-text.filled {
+		height: 270px;
+	}
+	.add-link-button {
+		display: flex;
+		cursor: pointer;
+		width: max-content;
+		span {
+			font-style: normal;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 22px;
+			color: #E76F51;
+			margin-left: 10px;
+			box-sizing: border-box;
+			display: block;
+			padding: 1px 0;
+		}
+	}
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 32px;
+	}
+	&__cancel {
+		width: 224px;
+		height: 54px;
+		border: 2px solid #E76F51;
+		box-sizing: border-box;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 22px;
+		color: #E76F51;
+	}
+	&__next {
+		width: 224px;
+		height: 54px;
+		border: 2px solid #3A3A3A;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 22px;
+		color: #3A3A3A;
+	}
+	&__list-tick li span {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 22px;
+		display: flex;
+		align-items: center;
+		color: #3A3A3A;
+	}	
+	&__list-tick li {
+		margin-bottom: 32px;
+		padding-left: 40px;
+		box-sizing: border-box;
+		position: relative;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #3A3A3A;
+	}
+	&__list-tick li:before {
+		position: absolute;
+		content: '';
+		left: 0px;
+		background: url('../img/tip.svg') center;
+		background-size: 100% 100%;
+		display: block;
+		width: 24px;
+		height: 24px;
+	}
+	&__list-line li {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 22px;
+		color: #3A3A3A;
+		padding-left: 40px;
+		box-sizing: border-box;
+		position: relative;
+		margin-bottom: 32px;
+	}
+	&__list-line li:before {
+		position: absolute;
+		content: '';
+		left: 0px;
+		background: url('../img/minus.svg') center;
+		background-size: 100% 100%;
+		display: block;
+		width: 24px;
+		height: 24px;
+	}
+	&__subtitle {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 22px;
+		color: #3A3A3A;
+		padding-left: 40px;
+		margin-bottom: 34px;
+	}
+}

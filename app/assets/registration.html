@@ -20,58 +20,37 @@
 
 <body>
     <!-- Begin header -->
-    <header class="header">
-        <div class="container">
-            <img alt="logo" class="header__logo" src="#">
-            <form class="search__form">
-                <button class="search__button" type="submit">
-                <input class="search__input" type="text" placeholder="Search the Timeline">
-                <div class="search__select">
-                    <div class="search__select-item">
-                        new york time now
-                    </div>
-                    <div class="search__select-item">
-                        new york
-                    </div>
-                    <div class="search__select-item">
-                        new york time
-                    </div>
-                    <div class="search__select-item">
-                        new yorker
-                    </div>
-                    <div class="search__select-item">
-                        new balance
-                    </div>
-                </div>
-            </form>
-            <nav class="header__menu">
-                <ul>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a class="current" href="#">View the full timeline</a>
-                    </li>
-                    <li>
-                        <a href="#">Become a collaborator</a>
-                    </li>
-                    <li>
-                        <a href="#">Donate</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
     <!-- End header -->
     <!-- Begin main -->
     <main class="main">
-        <form id="form1" novalidate>
-            <div class="consultation-form__title"></div>
-            <div class="consultation-form__group">
-                <div id="form1-name-wrap"><input id="form1-name" type="text" placeholder="Имя" required></div>
-                <div id="form1-phone-wrap"><input id="form1-phone" type="phone" placeholder="Телефон" required></div><button type="submit"></button>
-            </div><input type="checkbox" id="data-checkbox" checked="checked"> <label for="data-checkbox" class="data-checkbox-label"></label> <button class="mobile-box" type="submit"></button>
-        </form>
+        <div class="registration">
+            <div class="container">
+                <div class="registration__wrap">
+                    <a href="#" class="registration__logo">
+                        <img alt="logo" class="registration__logo-img" src="img/logo.svg">
+                    </a>
+                    <form class="registration__form">
+                        <label>
+                            Name
+                        </label>
+                        <input type="text" class="registration__input" value="Zaire Kenter">
+                        <label>
+                            Related occupation
+                        </label>
+                        <input type="text" class="registration__input" placeholder="Your occupation">
+                        <label>
+                            Specialty
+                        </label>
+                        <input type="text" class="registration__input" placeholder="Your speciality">
+                        <button type="submit" class="registration__button">Next step</button>
+                    </form>
+                    <div class="registration__nav">
+                        <div class="registration__nav-item active"></div>
+                        <div class="registration__nav-item"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- End main -->
     <!-- Begin footer -->

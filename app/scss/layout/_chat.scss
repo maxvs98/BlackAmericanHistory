@@ -1,0 +1,121 @@
+.chat {
+	padding: 34px 0 171px;
+	&__wrap {
+		width: 565px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&__top {
+		display: flex;
+	}
+	&__title {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		line-height: 48px;
+		color: #1C1C1C;
+	}
+	&__arrow {
+		margin-right: 16px;
+		cursor: pointer;
+	}
+	&__block {
+		width: 565.33px;
+		height: 402px;
+		background: #EFEFEF;
+		margin-top: 32px;
+		box-sizing: border-box;
+		padding: 32px;
+	}
+	&__number {
+		margin-top: 8px;
+		width: 32px;
+		height: 32px;
+		background: #E76F51;
+		border-radius: 16px;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 22px;
+		text-align: center;
+		color: #FFFFFF;
+		box-sizing: border-box;
+		padding-top: 5px;
+		margin-left: 32px;
+	}
+	&__message {
+		background: #E76F51;
+		height: max-content;
+		box-sizing: border-box;
+		padding: 16px;
+		margin-bottom: 32px;
+		width: max-content;
+		max-width: 100%;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 150%;
+		color: #FFFFFF;
+	}
+	&__message:last-child {
+		margin-bottom: 0;
+	}
+	&__message-self {
+		background: white;
+		height: max-content;
+		box-sizing: border-box;
+		padding: 16px;
+		margin-bottom: 32px;
+		width: max-content;
+		max-width: 100%;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 150%;
+		color: #3A3A3A;
+		margin-left: auto;
+	}
+	&__message-self:last-child {
+		margin-bottom: 0;
+	}
+	&__form {
+		position: relative;
+		margin-top: 32px;
+	}
+	&__input {
+		width: 100%;
+		height: 56px;
+		background: white;
+		box-sizing: border-box;
+		padding: 17px 52px;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+	}
+	&__input::placeholder {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #3A3A3A;
+	}
+	&__button {
+		width: 24px;
+		height: 24px;
+		background: url(../img/chat-send.svg);
+		background-size: 100% 100%;
+		position: absolute;
+		right: 16px;
+		top: 16px;
+	}
+	&__add-file {
+		width: 24px;
+		height: 24px;
+		background: url(../img/add-file.svg);
+		background-size: 100% 100%;
+		position: absolute;
+		left: 16px;
+		top: 16px;
+	}
+}

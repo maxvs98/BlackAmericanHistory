@@ -1,0 +1,142 @@
+.notifications {
+	padding: 34px 0 171px;
+	&__block {
+		width: 565px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 64px;
+	}
+	&__block.statistics-page {
+		.notifications__tabs {
+			width: 185px;
+		}
+	}
+	&__block:first-child {
+		margin-top: 0;
+	}
+	&__top {
+		display: flex;
+	}
+	&__title {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		line-height: 48px;
+		color: #1C1C1C;
+	}
+	&__tabs {
+		display: flex;
+		justify-content: space-between;
+		width: 286px;
+		margin-left: 32px;
+		margin-top: 21px;
+	}
+	&__tab {
+		box-sizing: border-box;
+		padding: 0 8px;
+		cursor: pointer;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 22px;
+		color: #B3B3B3;
+		transition: all 0.25s ease;
+	}
+	&__tab:hover {
+		color: #E76F51;
+		transition: all 0.25s ease;
+	}
+	&__tab.current {
+		color: #E76F51;
+	}
+	&__items {
+		margin-top: 32px;
+	}
+	&__item {
+		display: flex;
+		margin-top: 32px;
+		position: relative;
+		padding-bottom: 16px;
+		box-sizing: border-box;
+		border-bottom: 1px solid #EFEFEF;
+	}
+	&__item:first-child {
+		margin-top: 0;
+	}
+	&__item-title {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		line-height: 48px;
+		color: #3A3A3A;
+	}
+	&__icon {
+		width: 48px;
+		height: 48px;
+	}
+	&__item-content {
+		margin-left: 32px;
+	}
+	&__item-text {
+		margin-top: 7px;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 22px;
+		color: #3A3A3A;
+		max-width: 430px;
+	}
+	&__item-button {
+		width: 24px;
+		height: 24px;
+		background: url(../img/nbutton.svg);
+		background-size: 100% 100%;
+		position: absolute;
+		right: 0;
+		bottom: 17px;
+		cursor: pointer;
+	}
+	&__category {
+		margin-top: 32px;
+	}
+	&__category:first-child {
+		margin-top: 0;
+	}
+	&__category-top {
+		background: linear-gradient(180deg, #423EE0 0%, #812DE1 100%);
+		color: transparent;
+		background-clip: text;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 22px;
+		border-bottom: 1px solid #EFEFEF;
+		box-sizing: border-box;
+		padding-bottom: 8px;
+	}
+	&__category-items {
+		margin-top: 37px;
+		display: grid;
+  		grid-template-columns: repeat(3, 1fr);
+	   	grid-column-gap: 64px;
+	   	grid-row-gap: 32px;
+	}
+	&__category-number {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		line-height: 48px;
+		color: #E76F51;
+		margin-bottom: 7px;
+	}
+	&__category-text {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 22px;
+		color: #3A3A3A;
+	}
+	&__arrow {
+		margin-right: 16px;
+		cursor: pointer;
+	}
+}

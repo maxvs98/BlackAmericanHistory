@@ -22,102 +22,242 @@
     <!-- Begin header -->
     <header class="header">
         <div class="container">
-            <img alt="logo" class="header__logo" src="#">
-            <form class="search__form">
-                <button class="search__button" type="submit">
-                <input class="search__input" type="text" placeholder="Search the Timeline">
-                <div class="search__select">
-                    <div class="search__select-item">
-                        new york time now
-                    </div>
-                    <div class="search__select-item">
-                        new york
-                    </div>
-                    <div class="search__select-item">
-                        new york time
-                    </div>
-                    <div class="search__select-item">
-                        new yorker
-                    </div>
-                    <div class="search__select-item">
-                        new balance
-                    </div>
-                </div>
-            </form>
-            <nav class="header__menu">
-                <ul>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a class="current" href="#">View the full timeline</a>
-                    </li>
-                    <li>
-                        <a href="#">Become a collaborator</a>
-                    </li>
-                    <li>
-                        <a href="#">Donate</a>
-                    </li>
-                </ul>
+            <div class="header__wrapper">
+                <a href="#" class="header__logo">
+                    <img alt="logo" class="header__logo-img" src="img/logo.svg">
+                </a>
+                <nav class="header__menu editor-menu">
+                    <ul>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a class="current" href="#">View the full timeline</a>
+                        </li>
+                        <li>
+                            <a href="#">Donate</a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Dashboard</span><img alt="#" src="img/menu-arrow.svg"></a>
+                        </li>
+                        <li>
+                            <a href="#">Profile</a>
+                        </li>
+                    </ul>
+                </nav>
             </nav>
         </div>
     </header>
     <!-- End header -->
     <!-- Begin main -->
     <main class="main">
-        <div class="timeline">
+        <div class="add-new-date">
             <div class="container">
-                <div class="timeline__line">
+                <div class="add-new-date__block">
+                    <div class="add-new-date__left">
+                        <div class="add-new-date__block-title">
+                            Add new date
+                        </div>
+                    </div>
+                    <div class="add-new-date__right">
+                        <div class="add-new-date__notification">
+                            <img alt="icon" src="img/info-icon.svg">
+                            <span>
+                                Before adding new note, please read our guidelines
+                            </span>
+                        </div>
+                        <form class="add-new-date__form">
+                            <label>
+                                Date
+                            </label>
+                            <input type="text" class="add-new-date__input">
+                            <label>
+                                Title
+                            </label>
+                            <input type="text" class="add-new-date__input">
+                            <label>
+                                Text
+                            </label>
+                            <input type="text" class="add-new-date__input-text">
+                            <label>
+                                Source link
+                            </label>
+                            <input type="text" class="add-new-date__input" placeholder="Link.link">
+                            <div class="add-link-button">
+                                <img alt="icon" src="img/plus.svg">
+                                <span>
+                                    Add Link
+                                </span>
+                            </div>
+                            <div class="add-new-date__bottom">
+                                <button class="add-new-date__cancel">
+                                    Cancel
+                                </button>
+                                <button type="submit" class="add-new-date__next">
+                                    Next
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div class="timeline__title">
-                    <div class="timeline__request">
-                        Search results for <span>“New York”</span>
+                <div class="add-new-date__block">
+                    <div class="add-new-date__left">
+                        <div class="add-new-date__block-title">
+                            New timeline entry guidelines
+                        </div>
                     </div>
-                    <div class="timeline__results">19 results</div>
+                    <div class="add-new-date__right">
+                        <ul class="add-new-date__list-tick">
+                            <li>
+                                <span>
+                                    Consistency is key!
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    Try your best to minimize the use of the words: no,not, and any contraction of the wordnot (didn’t, couldn’t, wouldn’t, don’t, etc.). Minimizingthese words creates a morepositive tone for the reader.
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    Since Black American history is affected by blackhistory from all over the world, it isokay (and encouraged) to include events that happenedoutside of the USA if it isrelated, and helps tell the story of Black Americanhistory.
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    Always be honest, and use your best judgement :-)
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="timeline__posts">
-                    <form id="form1" novalidate>
-                        <div class="consultation-form__title"></div>
-                        <div class="consultation-form__group">
-                            <div id="form1-name-wrap"><input id="form1-name" type="date" required></div>
-                            <div id="form1-phone-wrap"><input id="form1-phone" type="description" required></div><button type="submit"></button>
-                        </div><input type="checkbox" id="data-checkbox" checked="checked"> <label for="data-checkbox" class="data-checkbox-label"></label> <button class="mobile-box" type="submit"></button>
-                    </form>
-                    <div class="post">
-                        <div class="post__left">
-                            <div class="post__date">1521 (Dec 25 or 26)</div>
-                        </div>
-                        <div class="post__info">
-                            <div class="post__title">
-                                The Santo Domingo Slave Revolt is the earliest slave rebellion posted in the Americas.
-                            </div>
-                            <div class="post__text">
-                                This revolt happened in the Spanish colony of Santo Domingo on the island of Hispaniola. On the first or second day of Christmas, slaves on the Nueva Isabela sugar plantation owned by the colony’s governor Diego Colón (a descendant of Chistopher Columbus) rebelled. Local oral tradition says that the rebellion was led by Maria Olofa (Wolofa) and Gonzalo Mandinga, a romantic couple, both from the Wolof nation and muslim. Just days after the uprising, on Jan 6th, 1522, Diego introduced strict laws designed to prevent the “Black and slaves” from uprising again.
-                            </div>
+                <div class="add-new-date__block">
+                    <div class="add-new-date__left">
+                        <div class="add-new-date__block-title">
+                            Date
                         </div>
                     </div>
-                    <div class="post">
-                        <div class="post__left">
-                            1522 (Jan 6)
+                    <div class="add-new-date__right">
+                        <ul class="add-new-date__list-line">
+                            <li>
+                                Format
+                            </li>
+                        </ul>
+                        <div class="add-new-date__subtitle">
+                            Single day event: YYYY (MMM DD)
                         </div>
-                        <div class="post__info">
-                            <div class="post__title">
-                                Diego Colon, governor of the Spanish colony Santo Domingo, introduces strict laws designed to prevent future slave rebellions in response to the rebellion that had taken place just days earlier.
-                            </div>
-                            <div class="post__text">
-                                In response to a well planned and well coordinated slave rebellion that had taken place on his sugar plantation, the Nueva Isabela, Diego Colon (a descendant of Christopher Columbus) introduces strict laws designed to prevent future rebellions. These laws restricted the physical movements of the enslaved, prohibited the enslaved from bearing arms and accessing weapons, required enslavers to keep strict slave registers, and introduced harsh punishment in the form of physical torture and execution. This would be the model that is eventually passed on during chattel slavery in the US.
-                            </div>
+                        <ul class="add-new-date__list-tick">
+                            <li>
+                                If only year is known: YYYY
+                            </li>
+                            <li>
+                                If only year and month is known: YYYY (MMM)
+                            </li>
+                            <li>
+                                If more than one possible year: YYYY or YYYY
+                            </li>
+                            <li>
+                                If more than one possible month: YYYY (MMM or MMM)
+                            </li>
+                            <li>
+                                If more than one possible day: YYYY (MMM DD or DD)
+                            </li>
+                        </ul>
+                        <div class="add-new-date__subtitle">
+                            Multiple day event: YYYY (MMM DD - DD)
+                        </div>
+                        <ul class="add-new-date__list-tick">
+                            <li>
+                                If event spans multiple months: YYYY (MMM DD - MMMDD)
+                            </li>
+                            <li>
+                                If event spans multiple years: YYYY (MMM DD) - YYYY(MMM DD)
+                            </li>
+                            <li>
+                                If only years are known: YYYY - YYYY
+                            </li>
+                            <li>
+                                If only years and months are known: YYYY (MMM - MMM), or YYYY(MMM) - YYYY (MMM) for multiple years
+                            </li>
+                            <li>
+                                If more than one possible year, month, or day, use“or” as referencedabove.
+                            </li>
+                        </ul>
+                        <ul class="add-new-date__list-line">
+                            <li>
+                                Please use your best judgement and try to get as closeto the above guidelines if yourevent dates meet none of the above criteria. We willedit them once submitted.
+                            </li>
+                            <li>
+                                Remember: CONSISTENCY IS KEY!
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="add-new-date__block">
+                    <div class="add-new-date__left">
+                        <div class="add-new-date__block-title">
+                            Title
                         </div>
                     </div>
-                    <div class="post">
-                        <div class="post__left">
-                            1526
+                    <div class="add-new-date__right">
+                        <ul class="add-new-date__list-line">
+                            <li>
+                                Limit the title to 1 or 2 sentences, but aim for 1descriptive sentence.
+                            </li>
+                            <li>
+                                Title should summarize the “big picture” of the entryas best as possible.
+                            </li>
+                        </ul>
+                        <ul class="add-new-date__list-tick">
+                            <li>
+                                Bad example: “Nat turner’s slave rebellion”
+                            </li>
+                            <li>
+                                Good example: “Nat Turner’s slave rebellion killsroughly 60 people but issuppressed and spreads fear among the White AmericanSouth.”
+                            </li>
+                        </ul>
+                        <ul class="add-new-date__list-line">
+                            <li>
+                                The reader should be able to get the gist of the entryfrom reading the title alone.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="add-new-date__block">
+                    <div class="add-new-date__left">
+                        <div class="add-new-date__block-title">
+                            Description
                         </div>
-                        <div class="post__info">
-                            <div class="post__title">
-                                The San Miguel de Gualdape Slave Rebellion
-                            </div>
-                        </div>
+                    </div>
+                    <div class="add-new-date__right">
+                        <ul class="add-new-date__list-line">
+                            <li>
+                                The first one or two sentences should generally bean overall summary of the entireentry (almost like an even more descriptive summaryof the title).
+                            </li>
+                            <li>
+                                While there are no word limits, please try to keepthe description as concise as possibleand include only the relevant information that helpsthe reader understand the full storyof the event.
+                            </li>
+                            <li>
+                                Treat each entry as if it were the only entry the reader will read. We want the reader tofully understand the macro view of every timelineevent.
+                            </li>
+                            <li>
+                                We are telling a story. Each entry should read likea short story describing things like: thecause of the event, important people involved, locations,sequence of events, outcomes,and impact.
+                            </li>
+                            <li>
+                                If there are dates in the description, those datesshould also have their own separateentry. It may seem repetitive, but repetition is beneficialfor the reader’s learning andunderstanding. It also helps put events into perspectiveas the reader is searching andviewing the timeline (Also, please avoid copying andpasting from other events. It willbore the reader and discourage further reading andlearning. There is a lot of value in“repetition in new packaging”).
+                            </li>
+                            <li>
+                                All information must be factual and neutral (voidof any personal opinion). Concrete,evidence based information only. Sentences appearingto include assumptions,speculations, or personal feelings will be removed
+                            </li>
+                            <li>
+                                Good example: In Southampton County, VA, Nat Turner,a devout enslaved preacher, leda revolt that killed 60 people before being defeatedby state militia at the BelmontPlantation. Known to be intelligent and called “TheProphet” by his followers, Natbelieved he saw signs from God to defend God’s kingdomby fighting the serpent.Starting with a few trusted followers, he eventuallygathered 70 enslaved and free blackswho traveled from house to house, freeing enslavedpeople and killing many of the whitepeople whom they encountered. The state militia eventuallydefeated the insurrection onAug 23. Turner believed the revolutionary violencewould serve to awaken the attitudesof whites to the reality of the inherent brutalityin slave-holding. He later said that hewanted to spread “terror and alarm” among whites.Following the insurrection, the stateexecuted 56 black people, and militias killed at least100 more, many of whom were notinvolved with the rebellion. News of the revolt spreadquickly, creating fear among thewhites who began attacking blacks at random for upto 2 weeks after the revolt had beensuppressed. Blacks suspected of participating in therebellion were beheaded by themilitia and their severed heads were mounted on polesat crossroads as a form ofintimidation (a section of Virginia State Route 658remains labeled as “BlackheadSignpost Road” in reference to these events). Turnerhimself eluded capture for aboutsix weeks before being discovered by a white farmerin Southampton County. Showingno remorse (believing it was God’s work), he was triedand hanged on November 11 inJerusalem, Virginia. They then dissected his bodyand used his skin to make purses assouvenirs. Of the five free blacks tried for participationin the insurrection, one washanged while the others were acquitted. In retaliationto the revolt, the General Assemblypassed legislation making it unlawful to teach readingand writing to either enslaved orfree blacks and restricting all blacks from holdingreligious meetings without thepresence of a licensed white minister. Other slave-holdingstates in the South enactedsimilar laws. Across Virginia and other Southern states,legislators criminalized thepossession of abolitionist publications by eitherwhites or blacks.
+                            </li>
+                        </ul>
+                        <ul class="add-new-date__list-tick">
+                            <li>
+                                Good example: “Nat Turner’s slave rebellion killsroughly 60 people but issuppressed and spreads fear among the White AmericanSouth.”
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
