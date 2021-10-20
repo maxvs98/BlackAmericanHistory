@@ -49,3 +49,21 @@
 		padding-top: 16px;
 	}
 }
+
+@media screen and (max-width: 768px) {
+	.donating {
+		padding: 32px 0;
+	}
+}
+
+@media screen and (max-width: 345px) {
+	.donating {
+		padding: 32px 0;
+		&__card {
+			width: 280px;
+		}
+		&__button {
+			width: 100%;
+		}
+	}
+}

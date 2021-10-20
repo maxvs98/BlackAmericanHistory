@@ -26,7 +26,7 @@
                 <a href="#" class="header__logo">
                     <img alt="logo" class="header__logo-img" src="img/logo.svg">
                 </a>
-                <nav class="header__menu editor-menu">
+                <nav class="header__menu">
                     <ul>
                         <li>
                             <a href="#">About</a>
@@ -35,74 +35,138 @@
                             <a href="#">View the full timeline</a>
                         </li>
                         <li>
+                            <a href="#">Become a collaborator</a>
+                        </li>
+                        <li>
                             <a href="#">Donate</a>
-                        </li>
-                        <li>
-                            <a class="current" href="#"><span>Dashboard</span><img alt="#" src="img/arrow-up.svg"></a>
-                            <ul class="header__drop-list">
-                                <li>
-                                    <a href="#">Notifications</a>
-                                </li>
-                                <li>
-                                    <a class="current" href="#">Editors</a>
-                                </li>
-                                <li>
-                                    <a href="#"><span>Messages</span><div class="header__menu-counter">3</div></a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Profile</a>
                         </li>
                     </ul>
                 </nav>
-            </nav>
+                <div class="header__mobile-block add-new-date-mobile-block">
+                    <div class="header__add-new-date"></div>
+                    <div class="header__mobile-search-button"></div>
+                    <div class="header__burger"></div>
+                    <div class="header__cross-mobile"></div>
+                </div>
+            </div>
+        </div>
+        <section class="mobile-search">
+            <form class="mobile-search__form active">
+                <button class="mobile-search__button" type="submit"></button>
+                <input class="mobile-search__input" type="text" placeholder="Search the Timeline">
+                <div class="mobile-search__select">
+                    <div class="mobile-search__select-items">
+                        <div class="mobile-search__select-item">
+                            new york time now
+                        </div>
+                        <div class="mobile-search__select-item">
+                            new york
+                        </div>
+                        <div class="mobile-search__select-item">
+                            new york time
+                        </div>
+                        <div class="mobile-search__select-item">
+                            new yorker
+                        </div>
+                        <div class="mobile-search__select-item">
+                            new balance
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-search__close"></div>
+            </form>
+        </section>
+        <div class="header__mobile-sidebar">
+            <div class="container">
+                <ul class="header__mobile-menu">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">View the full timeline</a>
+                    </li>
+                    <li>
+                        <a href="#">Donate</a>
+                    </li>
+                    <li>
+                        <a href="#">Dashboard</a>
+                        <ul class="header__mobile-submenu">
+                            <li>
+                                <a href="#">Notifications</a>
+                            </li>
+                            <li>
+                                <a href="#">Editors</a>
+                            </li>
+                            <li>
+                                <a href="#">Messages</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Profile</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <!-- End header -->
     <!-- Begin main -->
     <main class="main">
         <div class="editors">
-            <div class="container">
-                <div class="editors__wrap">
+            <div class="editors__wrap">
+                <div class="container">
                     <div class="editors__title">
                         Editors
                     </div>
+                </div>
+                <div class="container table-container">
                     <table class="editors__table">
                         <tr>
                             <th>Name</th>
                             <th>Email</th>
                             <th>Related occupation</th>
                             <th>Speciality</th>
-                            <th>Details</th>
+                            <th class="editors__details-header">Details</th>
                         </tr>
                         <tr>
                             <td>Zaire Kenter</td>
-                            <td class="editors__email">Zairekenter@bah.org</td>
+                            <td class="editors__email">
+                                <span class="editors__email-text">Zairekenter@bah.org</span>
+                                <div class="editors__email-button"></div>
+                            </td>
                             <td>Proffesor</td>
                             <td>Civil rights movement</td>
-                            <td><a class="editors__button" href="#"><img alt="" src="img/editors-button.svg"></a></td>
+                            <td class="editors__details"><a class="editors__button" href="#"><img alt="" src="img/editors-button.svg"></a></td>
                         </tr>
                         <tr>
                             <td>Cody Fisher</td>
-                            <td class="editors__email">nvt.isst.nute@gmail.com</td>
+                            <td class="editors__email">
+                                <span class="editors__email-text">nvt.isst.nute@gmail.com</span>
+                                <div class="editors__email-button"></div>
+                            </td>
                             <td>Proffesor</td>
                             <td>Civil rights movement</td>
-                            <td><a class="editors__button" href="#"><img alt="" src="img/editors-button.svg"></a></td>
+                            <td class="editors__details"><a class="editors__button" href="#"><img alt="" src="img/editors-button.svg"></a></td>
                         </tr>
                         <tr>
                             <td>Jacob Jones</td>
-                            <td class="editors__email">tienlapspktnd@gmail.com</td>
+                            <td class="editors__email">
+                                <span class="editors__email-text">tienlapspktnd@gmail.com</span>
+                                <div class="editors__email-button"></div>
+                            </td>
                             <td>Proffesor</td>
                             <td>Civil rights movement</td>
-                            <td><a class="editors__button" href="#"><img alt="" src="img/editors-button.svg"></a></td>
+                            <td class="editors__details"><a class="editors__button" href="#"><img alt="" src="img/editors-button.svg"></a></td>
                         </tr>
                         <tr>
                             <td>Theresa Webb</td>
-                            <td class="editors__email">danghoang87hl@gmail.com</td>
+                            <td class="editors__email">
+                                <span class="editors__email-text">danghoang87hl@gmail.com</span>
+                                <div class="editors__email-button"></div>
+                            </td>
                             <td>Proffesor</td>
                             <td>Civil rights movement</td>
-                            <td><a class="editors__button" href="#"><img alt="" src="img/editors-button.svg"></a></td>
+                            <td class="editors__details"><a class="editors__button" href="#"><img alt="" src="img/editors-button.svg"></a></td>
                         </tr>
                     </table>
                 </div>

@@ -41,7 +41,7 @@
                             <a class="current" href="#"><span>Dashboard</span><img alt="#" src="img/arrow-up.svg"></a>
                             <ul class="header__drop-list">
                                 <li>
-                                    <a href="#">chat</a>
+                                    <a href="#">Notifications</a>
                                 </li>
                                 <li>
                                     <a href="#">Editors</a>
@@ -56,7 +56,71 @@
                         </li>
                     </ul>
                 </nav>
-            </nav>
+                <div class="header__mobile-block add-new-date-mobile-block">
+                    <div class="header__add-new-date"></div>
+                    <div class="header__mobile-search-button"></div>
+                    <div class="header__burger"></div>
+                    <div class="header__cross-mobile"></div>
+                </div>
+            </div>
+        </div>
+        <section class="mobile-search">
+            <form class="mobile-search__form active">
+                <button class="mobile-search__button" type="submit"></button>
+                <input class="mobile-search__input" type="text" placeholder="Search the Timeline">
+                <div class="mobile-search__select">
+                    <div class="mobile-search__select-items">
+                        <div class="mobile-search__select-item">
+                            new york time now
+                        </div>
+                        <div class="mobile-search__select-item">
+                            new york
+                        </div>
+                        <div class="mobile-search__select-item">
+                            new york time
+                        </div>
+                        <div class="mobile-search__select-item">
+                            new yorker
+                        </div>
+                        <div class="mobile-search__select-item">
+                            new balance
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-search__close"></div>
+            </form>
+        </section>
+        <div class="header__mobile-sidebar">
+            <div class="container">
+                <ul class="header__mobile-menu">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">View the full timeline</a>
+                    </li>
+                    <li>
+                        <a href="#">Donate</a>
+                    </li>
+                    <li>
+                        <a href="#">Dashboard</a>
+                        <ul class="header__mobile-submenu">
+                            <li>
+                                <a href="#">Notifications</a>
+                            </li>
+                            <li>
+                                <a href="#">Editors</a>
+                            </li>
+                            <li>
+                                <a href="#">Messages</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Profile</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <!-- End header -->
@@ -82,11 +146,13 @@
                         <div class="chat__message-self">
                             Can I send you files?
                         </div>
-                        <form class="chat__form">
-                            <button class="chat__add-file"></button>
-                            <input type="text" class="chat__input" placeholder="Write a message">
-                            <button type="submit" class="chat__button"></button>
-                        </form>
+                        <div class="chat__form-wrap">
+                            <form class="chat__form">
+                                <button class="chat__add-file"></button>
+                                <input type="text" class="chat__input" placeholder="Write a message">
+                                <button type="submit" class="chat__button"></button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

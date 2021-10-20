@@ -103,3 +103,47 @@
 		margin-left: auto;
 	}
 }
+
+@media screen and (max-width: 768px) {
+	.messages {
+		padding-top: 32px;
+		&__wrap {
+			width: 100%;
+		}
+		&__title {
+			font-size: 24px;
+			line-height: 29px;
+		}
+		&__top {
+			display: block;
+		}
+		&__tabs {
+			margin-top: 16px;
+			margin-left: 0;
+		}
+		&__items {
+			margin-top: 37px;
+		}
+		&__icon {
+			margin-right: -24px;
+		}
+		&__item-text {
+			max-width: 223px;
+		}
+		&__item-time {
+			margin-top: 3px;
+			width: 49px;
+		}
+		&__item-number {
+			margin-top: 27px;
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.messages {
+		&__item {
+			max-width: 233px;
+		}
+	}
+}

@@ -90,3 +90,23 @@
 		right: 32px;
 	}
 }
+
+@media screen and (max-width: 768px) {
+	.popup {
+		width: 100%;
+		&__cross {
+			right: 16px;
+			top: 16px;
+		}
+		&__wrap {
+			padding-left: 32px;
+			padding-right: 32px;
+		}
+		&__title {
+			font-size: 24px;
+		}
+		&__subscript {
+			margin-top: 64px;
+		}
+	}
+}

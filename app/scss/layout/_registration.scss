@@ -1,6 +1,6 @@
 .registration {
 	box-sizing: border-box;
-	padding: 249px 0;
+	padding: 127px 0;
 	&__wrap {
 		width: 600px;
 		margin: 0px auto;
@@ -8,6 +8,9 @@
 		box-sizing: border-box;
 	}
 	&__form {
+		max-width: 480px;
+		margin-left: auto;
+		margin-right: auto;
 		label {
 			font-style: normal;
 			font-weight: 600;
@@ -68,5 +71,14 @@
 	}
 	&__nav-item.active {
 		background: #E76F51;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.registration {
+		&__wrap {
+			width: 100%;
+			padding: 0;
+		}
 	}
 }

@@ -49,4 +49,73 @@
 		display: block;
 		width: max-content;
 	}
+	&__email-button {
+		display: none;
+		background: url(../img/mention.svg);
+		background-size: 100% 100%;
+		width: 24px;
+		height: 24px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.editors {
+		padding-top: 32px;
+		&__title {
+			font-size: 24px;
+			line-height: 29px;
+		}
+		&__email {
+			padding: 28px 14.5px;
+		}
+		&__email-text {
+			display: none;
+		}
+		&__email-button {
+			display: block;
+		}
+		&__details {
+			display: none;
+		}
+		&__details-header {
+			display: none;
+		}
+		.table-container {
+			padding: 0;
+		}
+		&__table {
+			text-align: left;
+			tr {
+				box-sizing: border-box;
+			}
+			tr:nth-child(2n+1) {
+				background: #EFEFEF;
+			}
+			th {
+				font-size: 13px;
+				line-height: 16px;
+				padding: 0;
+				height: 64px; 
+				padding-left: 8px;
+				padding-right: 8px;
+			}
+			th:first-child,
+			td:first-child {
+				padding-left: 16px;
+			}
+			th:last-child,
+			td:last-child {
+				padding-right: 16px;
+			}
+			td {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 13px;
+				line-height: 16px;
+				padding: 30px 8px;
+			}
+		}
+	}
 }
